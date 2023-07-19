@@ -13,4 +13,4 @@ class Booking(models.Model):
 class MenuItem(models.Model):
     title = models.CharField(max_length=255, default="")
     price = models.DecimalField(max_digits=5, decimal_places=2)
-    inventory = models.SmallIntegerField(default=5)
+    inventory = models.SmallIntegerField()
